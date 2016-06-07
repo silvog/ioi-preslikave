@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "sentjost6";
+$password = "";
 $dbname = "preslikave";
 
 ?>
