@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body, button, a, p, span, div, h1, h2, h3, h4, h5, h6, input, select, option {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/*video, canvas {
+    position: absolute;
+}*/
+
+.tracking {
+    position: absolute;
+}
+
+.facePlaceholder {
+    min-width: 320px;
+    min-height: 240px;
+}
+
+/*style for color picker*/
+.image-pick-color {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.average-color {
+    text-align: center;
+    /*background-color: #67b168;*/
+    border: 2px solid #ddd;
+}
+
+.image-panel-color {
+    cursor: crosshair;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    line-height: 1.42857143;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.camera-placeholder {
+    margin-bottom: 15px;
+}
+
+.confirm-colors-button {
+    margin-top: 15px;
+}
+
+.image-color-select-footer {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: -moz-center;
+}
+
+.color-name-user-image {
+    margin: 25px;
+}
+
+.color-name-wrapper {
+    margin-top: 45px;
+}
+
+.color-name-playlist-user-data {
+    margin-top: 25px;
+}
+
+.color-preview {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ddd;
+    vertical-align: middle;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+#progressLine {
+    margin: 20px;
+    /*width: 400px;*/
+    height: 10px;
+}
+
+.color-name-facePlaceholder {
+    min-width: 192px;
+    min-height: 144px;
+}

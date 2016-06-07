@@ -1,0 +1,105 @@
+<script src="js/holder.js"></script>
+<script src="js/colorSampler/color-sampler.min.js"></script>
+<script src="js/colorSelectSampler.js"></script>
+<script src="js/jquery.xcolor.js"></script>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row">
+        <div class="text-center">
+            <h4><strong>Izberi dve nasprotujoči si barvi</strong></h4>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+            <div class="panel">
+
+                <div id="canvasLeftParent">
+                    <!--<img id="sejalecLeft" src="images/slika1.bmp" alt="..." class="image-panel-color">-->
+                    <canvas id="canvasLeft" class="image-panel-color" width="348.667px" height="310.967px">
+                    </canvas>
+                </div>
+                <div class="image-color-select-footer" id="selectedColorLeft">
+                    <div id="previewColorLeft" class="color-preview"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4 col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
+
+            <div class="well-lg text-center average-color" id="averageColor">Povprečna barva</div>
+
+            <div class="text-center confirm-colors-button"><!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#poimenujBarvoModal">
+                    Potrdi
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 pull-right">
+            <div class="panel">
+
+                <div id="canvasRightParent">
+                    <!--<img src="images/slika1.bmp" alt="..." class="image-panel-color">-->
+                    <canvas id="canvasRight" class="image-panel-color" width="348.667px" height="310.967px"></canvas>
+                </div>
+                <div class="image-color-select-footer" id="selectedColorRight">
+
+                    <div id="previewColorRight" class="color-preview"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-lg-offset-3 col-lg-6 text-center">
+        <video id="videoColorPick" width="192" height="144" preload autoplay loop muted
+               class="camera-placeholder img-rounded tracking"></video><!--tracking-->
+        <canvas id="canvasColorPick" width="192" height="144" class="tracking img-rounded"></canvas>
+        <img data-src="holder.js/192x144" class="img-rounded camera-placeholder">
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div id="poimenujBarvoModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Poimenovanje povprečne barve</h4>
+            </div>
+            <div class="modal-body">
+                <p>Poimenuj barvo v 5 sekundah.</p>
+                <p>
+                    Primer:
+                </p>
+                <ul>
+                    <li>RDEČO ZELENA</li>
+                    <li>NEBESNO MODRA</li>
+                    <li>SONČNO ORANŽNA</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="commenceNaming()">V redu
+                </button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Prekliči</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
